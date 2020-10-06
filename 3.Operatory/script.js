@@ -16,11 +16,11 @@ console.log(moduloResult);
 //Task 3
 var str1="T";
 var str2="B";
-var stringResault= "";
+var stringResult= "";
 
-stringResault=str1+str2;
+stringResult=str1+str2;
 
-console.log(stringResault);
+console.log(stringResult);
 
 //Task 4
 var someNumber=425;
@@ -43,8 +43,8 @@ console.log(counter);
 //Task 6
 var x=2;
 var y=9;
-var resault=null;
+var result=null;
 
-resault=x<y;
+result=x<y;
 
-console.log(resault);
+console.log(result);
