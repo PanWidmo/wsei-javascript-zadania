@@ -96,7 +96,59 @@ for(var i=0;i<x;i++){
 }
 
 //Task 8c
+var x=5;
+var stars = '*';
+var space = ' ';
+
+for (var i = 0; i < x; i++) {
+    var result = '';
+    for (var j = x - 1; j > i; j--) {
+        result += space;
+    }
+    for (var k = 0; k <= i; k++) {
+        result += stars;
+        result += (k < i) ? stars : '';
+    }
+    console.log(result);
+}
 
 //Task 8d
+var x=5;
+var stars = '*';
+
+for (var i = 0; i < 11; i++) {
+    var result = '';
+    for (var j = 0; j < x; j++) {
+        if (i < x) {
+            result += j <= i ? stars : j;
+        } else if (i > x) {
+            result = (j < i-6 ? (j-4)*-1 : stars) + result;
+        } else {
+            result = "-----";
+        }
+    }
+    console.log(result);
+}
 
 //Task 8e
+var stars = '*';
+var space = ' ';
+
+for (var i = 0; i < 8; i++) {
+    var result = '';
+    for (var j = 4; j > i; j--) {
+        result += space;
+    }
+    for (var k = 0; k <= i; k++) {
+        result += stars + space;
+    }
+    if(i>=5) {
+        result = '';
+        for (var f = 0; f < 4; f++) {
+          result += space;
+        }
+        result += stars;
+    }
+  
+    console.log(result);
+}
