@@ -70,10 +70,12 @@ function Calculator(a, b) {
         return (this.a * this.b);
     }
     this.dzielenie = function () {
-        if (!b)
-            throw new Error("Cannot divide by zero");
-
-        return this.a / this.b;
+        if(b==0){
+            console.log("Nie mozna przez 0");
+        } 
+        else {
+            return (this.a/this.b);
+        }
     }
 }
 
@@ -87,3 +89,32 @@ console.log(calc2.mnozenie());
 console.log(calc3.dzielenie());
 
 //Task 4
+function Constructor(){
+    this.number = 0;
+    
+    this.up = function() {
+        this.number++;
+    }
+    
+    this.down = function() {
+        if(this.number > 0){
+            this.number--;
+        }
+        else{
+            console.log("Jesteś na ziemi.");
+        }        
+    }
+    
+    this.showLevel = function() {
+        console.log(this.number);
+    }
+}
+
+var constructor = new Constructor();
+
+constructor.showLevel();
+constructor.up();
+constructor.up();
+constructor.showLevel();
+constructor.down();
+constructor.showLevel();
