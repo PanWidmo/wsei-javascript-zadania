@@ -94,6 +94,7 @@ function Constructor(){
     
     this.up = function() {
         this.number++;
+        this.showLevel();
     }
     
     this.down = function() {
@@ -102,7 +103,8 @@ function Constructor(){
         }
         else{
             console.log("Jesteś na ziemi.");
-        }        
+        }    
+        this.showLevel();
     }
     
     this.showLevel = function() {
@@ -112,9 +114,7 @@ function Constructor(){
 
 var constructor = new Constructor();
 
-constructor.showLevel();
+
 constructor.up();
 constructor.up();
-constructor.showLevel();
 constructor.down();
-constructor.showLevel();
