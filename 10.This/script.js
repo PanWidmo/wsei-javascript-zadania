@@ -85,3 +85,5 @@ console.log(calc1.sum());
 console.log(calc2.odj())
 console.log(calc2.mnozenie());
 console.log(calc3.dzielenie());
+
+//Task 4
