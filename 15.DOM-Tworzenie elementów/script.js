@@ -124,7 +124,7 @@ const br2 = document.createElement('br');
 const button = document.createElement("button");
 
 const spantext = "Ilocs elementow, teskt, kolor oraz typ elementy";
-const buttonText = "Stworz";
+const buttonText = "Utworz";
 
 form.appendChild(span);
 form.appendChild(br1);
